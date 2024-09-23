@@ -1,0 +1,2 @@
+# devionary
+dicionario para devs
