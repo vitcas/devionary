@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devionary</title>
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+		body {
+			background-color: #2a2c33;
+			color:#b5b5b5;
+			margin: 0;
+			padding: 0;
+		}
+		
+		main{
+			display: flex;
+			flex-direction: column; /* Alinha os elementos verticalmente */
+			align-items: center; 
+			padding: 5px;
+		}
+		h1{
+			margin: 10px 0;  
+			font-family: "Silkscreen", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+		.diktionary{
+			background-color: black;
+			padding: 5px;
+			font-family: "Oswald", sans-serif;
+			font-optical-sizing: auto;
+			font-weight: 400;
+			font-style: normal;
+			font-size:14px;
+			overflow: auto;
+			max-width: 500px;
+			box-shadow: 0 0 20px 0 red;
+		}
+		.diktionary ul, .diktionary li{
+			list-style: none;
+			padding: 1px;
+		}
+		.diktionary strong{
+			color: rgb(255, 62, 62);
+		}
+		#resultado{
+
+			text-align:right;
+		}
+		.atual{
+		  text-align:right;
+		  color:#cf869a;
+		}
+		.letra{
+			text-align:center;
+			color: gold;
+			font-size:16px;
+			font-weight: 700;
+		}
+		p{  
+		  margin:5px;
+		  text-align:center;
+		  
+		}
+		.descpt{
+		  font-size:16px;
+		}
+		footer{
+		  margin-top:15px;
+		  font-size:14px;
+		}
+	</style>
+</head>
+<body> 
+  <main>
+		<h1>Devionary</h1>
+    <div class="diktionary">
+      <p class="descpt">Dicionário para desenvolvedores.</p>
+			<div id="resultado"></div>
+			<div class="atual">última atualização: <span id="lastu">21/09/2024</span></div>
+      <ul id="minhaLista">
+        <!--<li><strong>item: </strong>about</li>-->
+        <li><strong>.NET: </strong>Plataforma de desenvolvimento da Microsoft que suporta várias linguagens de programação, como C# e VB.NET, para criar aplicações para Windows, web e móveis.</li>
+				<li class="letra">A</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>ACID: </strong>Conjunto de propriedades que garantem transações de banco de dados confiáveis. Inclui Atomicidade (todas ou nada), Consistência (estado válido), Isolamento (execução independente) e Durabilidade (alterações permanentes).</li>
+				<li><strong>Active Directory: </strong>Serviço de diretório da Microsoft que gerencia identidades e recursos em uma rede, permitindo autenticação, autorização e gerenciamento de políticas de segurança.</li>
+				<li><strong>ActiveMQ: </strong>Broker de mensagens open-source com suporte a diversos protocolos de mensagens, utilizado para integrar aplicações com alta disponibilidade e escalabilidade.</li>
+				<li><strong>Airflow: </strong>Plataforma de orquestração de workflows que permite automatizar, agendar e monitorar data pipelines de maneira eficiente.</li>
+				<li><strong>AJAX: </strong>(Asynchronous JavaScript and XML) Técnica de desenvolvimento web que permite a atualização de partes de uma página da web sem recarregar a página inteira, utilizando JavaScript para fazer requisições assíncronas.</li>
+				<li><strong>Alteryx: </strong>Plataforma de automação de análise de dados que permite preparar, combinar e analisar grandes volumes de dados com uma interface visual e ferramentas de machine learning.</li>
+				<li><strong>AMQP: </strong>(Advanced Message Queuing Protocol) Protocolo de mensagens aberto e padronizado que permite a comunicação entre sistemas de forma assíncrona e confiável.</li>
+        <li><strong>Angular: </strong>Framework de desenvolvimento front-end para construir aplicações web dinâmicas e de página única, mantido pelo Google e baseado em TypeScript.</li>
+        <li><strong>API: </strong> (Application Programming Interface) Interface que permite a comunicação entre diferentes sistemas ou softwares.</li>
+        <li><strong>ArangoDB: </strong>Banco de dados multi-modelo que suporta grafos, documentos e chave-valor, permitindo trabalhar com diferentes tipos de dados em uma única consulta.</li>
+        <li><strong>ASP: </strong>(Active Server Pages) Tecnologia da Microsoft para desenvolvimento de páginas web dinâmicas, que permite gerar conteúdo HTML em resposta a solicitações do navegador, usando scripts em VBScript ou JScript.</li>
+        <li><strong>Atom: </strong>Editor de texto open-source desenvolvido pelo GitHub, altamente personalizável e com suporte a plugins, voltado para desenvolvimento de software.</li>
+        <li><strong>Aurora: </strong>Banco de dados relacional gerenciado pela AWS, parte do Amazon RDS. Amazon Aurora é compatível com MySQL e PostgreSQL, oferecendo alta performance, escalabilidade automática e redundância em múltiplas regiões.</li>
+        <li class="letra">B</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Backbone.js: </strong>JavaScript leve que fornece estrutura para aplicações web, organizando o código com modelos, views e coleções, facilitando o desenvolvimento de SPAs.</li>
+				<li><strong>Bamboo: </strong>Ferramenta de CI/CD da Atlassian que permite automação de builds, testes e deploys, integrando-se nativamente com outras ferramentas Atlassian, como Jira e Bitbucket.</li>
+				<li><strong>Bash: </strong>Shell de linha de comando e linguagem de script para sistemas Unix/Linux, amplamente usada para automação de tarefas e gerenciamento de sistemas.</li>
+				<li><strong>BigQuery: </strong>Serviço de análise de dados altamente escalável da Google Cloud. Permite realizar consultas SQL em grandes volumes de dados com rapidez, sem a necessidade de gerenciar infraestrutura.</li>
+				<li><strong>Bitbucket: </strong>Plataforma de hospedagem de código que suporta Git e Mercurial, com recursos para colaboração, controle de versões e integração contínua.</li>
+				<li><strong>Blockchain: </strong>Tecnologia de registro descentralizado que armazena dados em blocos encadeados de forma segura, amplamente usada em criptomoedas e contratos inteligentes.</li>
+				<li><strong>Bootstrap: </strong>Framework de CSS e JavaScript para desenvolvimento de interfaces web responsivas e modernas, com um sistema de grid e componentes pré-estilizados.</li>
+				<li><strong>Bottle: </strong>Microframework Python leve, usado para criar APIs e aplicações web simples e rápidas, com uma única dependência padrão.</li>
+				<li><strong>BPMN: </strong>(Business Process Model and Notation) Padrão gráfico para modelar processos de negócios, permitindo que fluxos de trabalho sejam visualizados e documentados de forma clara.</li>
+				<li><strong>Brackets: </strong>Editor de texto open-source focado em desenvolvimento web, com recursos como pré-visualização ao vivo e suporte nativo a HTML, CSS e JavaScript.</li>
+				<li><strong>Broker: </strong>Componente de software que atua como intermediário na comunicação entre diferentes sistemas ou aplicações, gerenciando mensagens e suas entregas.</li>
+				<li><strong>Buddy: </strong>Plataforma de CI/CD com interface visual que permite automatizar builds, testes e deploys com pipelines fáceis de configurar, suportando múltiplas linguagens e ambientes.</li>
+				<li class="letra">C</li>
+				<!--<li><strong>item: </strong>about</li>-->
+        <li><strong>C: </strong>Linguagem de baixo nível com controle direto sobre a memória, usada para desenvolvimento de sistemas e aplicações de alto desempenho.</li>
+        <li><strong>C#: </strong>Linguagem de programação desenvolvida pela Microsoft, com foco em simplicidade e segurança, amplamente usada para desenvolvimento de aplicações .NET e jogos com Unity.</li>
+        <li><strong>C++: </strong>Linguagem de programação com suporte a programação orientada a objetos e de baixo nível, utilizada em desenvolvimento de sistemas, jogos e aplicações de alto desempenho.</li>
+        <li><strong>CakePHP: </strong>Framework PHP que segue o padrão MVC, facilitando o desenvolvimento rápido de aplicações web com recursos integrados como scaffolding, validação e autenticação.</li>
+        <li><strong>Camel: </strong>(Apache Camel) Framework open-source para integração de sistemas, que implementa padrões de integração de empresas (EIPs) e facilita o roteamento de mensagens entre serviços.</li>
+        <li><strong>Camunda: </strong>Plataforma de automação de processos de negócios (BPM) e workflows, usada para modelar, executar e monitorar processos baseados em BPMN e DMN.</li>
+				<li><strong>Cassandra: </strong>Banco de dados NoSQL distribuído e altamente escalável, projetado para lidar com grandes volumes de dados com alta disponibilidade e sem ponto único de falha.</li> 
+				<li><strong>CDN: </strong>(Content Delivery Network) Rede de servidores distribuídos que entregam conteúdo da web de forma rápida e eficiente, melhorando a velocidade de carregamento e a disponibilidade global.</li>
+				<li><strong>CherryPy: </strong>Framework minimalista para desenvolvimento de aplicações web em Python, que permite construir aplicações com pouco código, seguindo o paradigma de programação orientada a objetos.</li>
+        <li><strong>CI/CD: </strong> (Continuous Integration/Continuous Deployment) Processo automatizado de integração e entrega contínua de código.</li>
+        <li><strong>CircleCI: </strong>Plataforma de integração contínua e entrega contínua (CI/CD) que automatiza o processo de build, teste e deployment de aplicações, com suporte para vários ambientes e linguagens.</li>
+        <li><strong>Clarion: </strong>Linguagem de programação e ambiente de desenvolvimento integrado (IDE) focado em aplicações de negócios, permitindo o desenvolvimento rápido de software com forte suporte a bancos de dados e geração de código.</li>
+				<li><strong>Clipper: </strong>Linguagem de programação antiga utilizada para desenvolvimento de aplicações de banco de dados, especialmente popular nos anos 80 e 90.</li>
+				<li><strong>Cloudflare: </strong>Plataforma de serviços web que oferece CDN, segurança, mitigação de DDoS e otimização de desempenho, protegendo e acelerando sites e aplicações na internet.</li>
+				<li><strong>CloudFront: </strong>Serviço de Content Delivery Network (CDN) da AWS que distribui conteúdo globalmente com baixa latência e alta velocidade, melhorando a experiência do usuário.</li>
+				<li><strong>COBOL: </strong>Linguagem de programação desenvolvida nos anos 60, amplamente utilizada em sistemas de negócios e financeiros, conhecida por sua legibilidade e robustez em aplicações comerciais.</li>
+				<li><strong>CodeIgniter: </strong>Framework PHP leve e fácil de usar, ideal para desenvolvedores que precisam de uma solução rápida e com baixa curva de aprendizado para criar aplicações web.</li>
+				<li><strong>Codeship: </strong>Serviço de CI/CD na nuvem que automatiza builds, testes e deploys de aplicações, com foco em agilidade e escalabilidade para equipes de desenvolvimento.</li>
+				<li><strong>Composer: </strong>Gerenciador de dependências para PHP, que facilita a instalação e gerenciamento de bibliotecas e pacotes em projetos PHP.</li>	
+				<li><strong>containerd: </strong>Runtime de containers open-source e de alto desempenho, focado em gerenciar o ciclo de vida de containers, incluindo execução, imagens e snapshots.</li>
+				<li><strong>Couchbase: </strong>Banco de dados NoSQL distribuído que combina armazenamento de documentos JSON com consultas SQL, oferecendo alta escalabilidade e baixa latência.</li>
+				<li><strong>CRM: </strong>(Customer Relationship Management) Sistemas que ajudam a gerenciar interações com clientes e potenciais clientes, como Salesforce.</li>
+        <li><strong>CRUD: </strong> (Create, Read, Update, Delete) Operações básicas para gerenciamento de dados em aplicações.</li>
+        <li><strong>CSS: </strong> (Cascading Style Sheets) linguagem usada para estilizar e formatar a apresentação de documentos HTML</li>
+        <li><strong>Cypress: </strong>Framework de testes end-to-end para aplicações web, focado em facilidade de uso e automação de testes de interface de usuário.</li>
+        <li class="letra">D</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Dapper: </strong>Micro-ORM para .NET que mapeia objetos diretamente para consultas SQL, proporcionando uma alternativa leve e de alta performance para interagir com bancos de dados.</li>
+				<li><strong>Dash: </strong>Framework Python usado para criar aplicações web interativas de visualização de dados, amplamente utilizado para dashboards e aplicações de ciência de dados.</li>
+				<li><strong>Dart: </strong>Linguagem de programação desenvolvida pelo Google, utilizada principalmente para construir aplicações móveis e web, especialmente com o framework Flutter.</li>
+				<li><strong>DataDog: </strong>Plataforma de monitoramento e análise de infraestrutura, aplicações e logs em tempo real. Focada em observabilidade, permite rastrear métricas, logs e eventos em um único lugar.</li>
+				<li><strong>DataGrip: </strong>IDE para bancos de dados desenvolvida pela JetBrains, que oferece ferramentas avançadas para desenvolvimento e administração de bancos de dados, com suporte a várias plataformas SQL.</li>
+				<li><strong>DBeaver: </strong>Ferramenta open-source para gerenciamento de bancos de dados, que oferece uma interface unificada para acessar diferentes tipos de bancos de dados (SQL e NoSQL).</li>
+				<li><strong>DDoS: </strong>(Distributed Denial of Service) Ataque cibernético onde múltiplos sistemas sobrecarregam um servidor ou rede, interrompendo o acesso e causando indisponibilidade do serviço.</li>
+				<li><strong>Debian: </strong>Distribuição Linux popular e estável, conhecida por sua robustez e amplo repositório de pacotes, servindo como base para muitas outras distribuições.</li>
+				<li><strong>DevExpress: </strong>Suíte de ferramentas de desenvolvimento para criar interfaces de usuário (UI) ricas em aplicações desktop e web. DevExpress oferece componentes como grids, gráficos, dashboards, entre outros, para frameworks como .NET e JavaScript.</li>
+				<li><strong>Django: </strong>Framework web completo para Python, com foco em rapidez de desenvolvimento e design de "baterias incluídas", incluindo administração e ORM.</li>
+				<li><strong>DMN: </strong>(Decision Model and Notation) Padrão para modelar e automatizar decisões de negócios, permitindo representar regras e lógicas de decisão de forma visual e compreensível.</li>
+        <li><strong>DNS: </strong>(Domain Name System) Sistema que traduz nomes de domínio em endereços IP.</li>
+        <li><strong>Docker: </strong>Plataforma de containerização que facilita a criação, distribuição e execução de aplicações em containers isolados.</li>
+        <li><strong>DOM: </strong>(Document Object Model) interface de programação para documentos HTML e XML. Ele representa a estrutura de um documento como uma árvore de nós, permitindo que linguagens de programação acessem, modifiquem e manipulem o conteúdo e a estrutura da página web.</li>
+        <li><strong>DynamoDB: </strong>Banco de dados NoSQL da AWS, totalmente gerenciado e altamente escalável, usado para aplicações que requerem latência baixa e alta disponibilidade.</li>
+        <li><strong>Dynatrace: </strong>Plataforma de monitoramento de performance de aplicações e infraestrutura com inteligência artificial para detectar problemas automaticamente e otimizar o desempenho.</li>
+				<li class="letra">E</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>EC2: </strong>(Elastic Compute Cloud) Serviço da AWS que fornece capacidade de computação escalável na nuvem, permitindo criar e gerenciar máquinas virtuais para rodar aplicações.</li>
+				<li><strong>Eclipse: </strong>IDE popular para desenvolvimento de software, especialmente para Java, com suporte a uma vasta gama de linguagens através de plugins.</li>
+				<li><strong>EKS: </strong>(Elastic Kubernetes Service) Serviço gerenciado da AWS para executar Kubernetes, facilitando o deployment, gerenciamento e escalabilidade de contêineres.</li>
+				<li><strong>Elasticsearch: </strong>Motor de busca e análise em tempo real, amplamente utilizado para armazenar, pesquisar e analisar grandes volumes de dados.</li>
+				<li><strong>Electron: </strong>Framework que permite construir aplicações desktop usando tecnologias web (HTML, CSS, JavaScript), permitindo a criação de aplicativos multiplataforma com uma única base de código.</li>
+				<li><strong>Ember: </strong>Framework JavaScript para criação de aplicações web escaláveis e complexas, utilizando o padrão MVC e focando em convenções para aumentar a produtividade.</li>
+        <li><strong>Entity Framework: </strong>ORM da Microsoft para .NET, que facilita a interação entre aplicativos e bancos de dados relacionais através de abstração de objetos.</li>
+				<li><strong>ETL: </strong>(Extract, Transform, Load) Processos usados para integrar e manipular dados de diferentes fontes para análise e relatórios.</li>
+				<li><strong>Express.js: </strong>Framework minimalista para Node.js, usado para construir aplicações web e APIs de forma rápida e flexível.</li>			
+        <li class="letra">F</li>	
+				<!--<li><strong>item: </strong>about</li>-->				
+				<li><strong>FastAPI: </strong>Framework web moderno e rápido para construir APIs em Python, conhecido pela alta performance e fácil uso.</li>
+				<li><strong>FileZilla: </strong>Cliente FTP open-source que permite transferir arquivos entre um computador e um servidor via FTP, SFTP ou FTPS. Oferece uma interface amigável, suporte a arrastar e soltar, e gerenciador de site para facilitar conexões frequentes.</li>
+				<li><strong>Firebase: </strong>Plataforma da Google que oferece serviços backend como autenticação, banco de dados em tempo real e hospedagem para aplicações web e móveis.</li>
+				<li><strong>Firebird: </strong>Sistema de gerenciamento de banco de dados relacional open-source, conhecido por sua leveza e portabilidade. Suporta consultas SQL, transações ACID e é utilizado em aplicações embarcadas e corporativas.</li>
+				<li><strong>Flask: </strong>Framework web micro para Python, conhecido por sua simplicidade e flexibilidade para criar aplicações web pequenas e escaláveis.</li>
+				<li><strong>Flink: </strong>Framework e engine para processamento de dados em tempo real e em lote, com foco em alta performance e baixa latência.</li>
+				<li><strong>Flutter: </strong>Framework da Google para desenvolvimento de aplicações multiplataforma com uma única base de código, usando a linguagem Dart.</li>
+				<li><strong>Framework: </strong>Conjunto de ferramentas e bibliotecas que facilitam o desenvolvimento de software, oferecendo estruturas e padrões de código reutilizáveis.</li>
+				<li><strong>FTP: </strong>(File Transfer Protocol) Protocolo de rede usado para transferir arquivos entre um cliente e um servidor em uma rede TCP/IP.</li>
+				<li><strong>FuelPHP: </strong>Framework PHP full-stack flexível, que segue o padrão HMVC (Hierarchical Model-View-Controller) e oferece uma abordagem modular para criar aplicações web.</li>
+        <li class="letra">G</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>GCP: </strong>(Google Cloud Platform) Conjunto de serviços de computação em nuvem oferecidos pelo Google, incluindo armazenamento, processamento, machine learning e gerenciamento de dados.</li>
+				<li><strong>Git: </strong>Sistema de controle de versão distribuído para rastrear alterações no código-fonte e colaborar em projetos de desenvolvimento.</li>
+        <li><strong>GitHub: </strong>Plataforma de hospedagem de código-fonte e controle de versão baseada em Git, com recursos para colaboração, gerenciamento de projetos e integração contínua.</li>
+        <li><strong>GitLab: </strong>plataforma de DevOps que oferece uma solução completa para gerenciamento de código-fonte, integração contínua (CI), entrega contínua (CD) e colaboração em projetos de software. Ele combina funcionalidades de versionamento de código, rastreamento de problemas, revisão de código e automação de pipelines em uma única ferramenta.</li>
+        <li><strong>Gluon: </strong>Framework que facilita o desenvolvimento de aplicações Java móveis e desktop com uma única base de código, oferecendo integração com JavaFX e suporte para interfaces gráficas.</li>
+        <li><strong>Go: </strong>(Golang) Linguagem de sistema desenvolvida pelo Google, conhecida por sua simplicidade e suporte embutido para concorrência.</li>
+        <li><strong>Grafana: </strong>Ferramenta open-source para visualização e análise de dados. Usada para criar dashboards interativos com dados de fontes variadas, como bancos de dados de séries temporais e sistemas de monitoramento.</li>
+        <li><strong>Grails: </strong>Framework de desenvolvimento web baseado em Groovy que simplifica o desenvolvimento em Java, oferecendo uma abordagem ágil e integrando ferramentas como Spring e Hibernate.</li>
+        <li><strong>GraphQL: </strong>linguagem de consulta para APIs, desenvolvida pelo Facebook, que permite que os clientes solicitem exatamente os dados de que precisam, sem trazer dados desnecessários. Diferente de REST, em que múltiplas requisições podem ser necessárias para obter dados de diferentes endpoints, com GraphQL, você pode fazer uma única consulta e receber exatamente os dados especificados.</li>
+        <li><strong>Groovy: </strong>Linguagem de programação dinâmica para a plataforma Java, conhecida por sua sintaxe simples e integração com Java, frequentemente usada em automação, scripts e no framework Grails.</li>
+        <li><strong>gRPC: </strong>Um framework de RPC (Remote Procedure Call) desenvolvido pelo Google que usa HTTP/2 e Protobufs para comunicação eficiente entre sistemas. É usado para serviços que requerem alta performance e baixa latência.</li>
+				<li><strong>GWT: </strong>(Google Web Toolkit) Framework de desenvolvimento que permite criar aplicações web em Java, que são automaticamente convertidas em JavaScript para rodar no navegador.</li>
+				<li class="letra">H</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Hadoop: </strong>Framework open-source para armazenamento distribuído e processamento de grandes volumes de dados, conhecido por seu sistema de arquivos HDFS e MapReduce.</li>
+				<li><strong>Hazelcast: </strong>Plataforma de computação distribuída e armazenamento em memória, usada para caching, compartilhamento de dados e execução de tarefas em clusters.</li>
+				<li><strong>HeidiSQL: </strong>Ferramenta gratuita e leve para administração e desenvolvimento de bancos de dados MySQL, MariaDB, PostgreSQL e SQL Server, permitindo executar queries e gerenciar tabelas e dados.</li>
+        <li><strong>Hibernate: </strong>Framework de mapeamento objeto-relacional (ORM) para Java, facilitando a interação entre aplicações Java e bancos de dados relacionais.</li>
+				<li><strong>Hive: </strong>Ferramenta de data warehousing sobre Hadoop que permite consultar e gerenciar grandes conjuntos de dados usando SQL.</li>
+        <li><strong>HTML: </strong>(HyperText Markup Language) linguagem padrão usada para criar e estruturar páginas web.</li>
+				<li><strong>HTTP: </strong>(Hypertext Transfer Protocol) Protocolo de comunicação utilizado para transferir dados na web, responsável pela comunicação entre navegadores e servidores.</li>
+				<li><strong>HTTPS: </strong>(Hypertext Transfer Protocol Secure) Versão segura do HTTP que usa criptografia SSL/TLS para proteger a transferência de dados entre navegador e servidor, garantindo confidencialidade e integridade.</li>
+				<li class="letra">I</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>IAM: </strong>(Identity and Access Management) Serviço da AWS que gerencia identidades e define permissões, controlando o acesso aos recursos da nuvem com segurança.</li>
+				<li><strong>IDE: </strong>(Integrated Development Environment) Ambiente de desenvolvimento que combina ferramentas para edição de código, depuração e gerenciamento de projetos.</li>
+				<li><strong>IIS: </strong>(Internet Information Services) Servidor web da Microsoft para hospedar websites, serviços web e aplicações na plataforma Windows, oferecendo suporte para HTTP, HTTPS, FTP, SMTP, e mais, com integração nativa ao .NET.</li>
+				<li><strong>InVision: </strong>Plataforma de design colaborativo que permite prototipagem e feedback em tempo real para equipes de design e desenvolvimento.</li>			
+				<li><strong>Ionic: </strong>Framework para desenvolvimento de aplicações móveis híbridas, que utiliza tecnologias web como HTML, CSS e JavaScript.</li>
+				<li><strong>IoT: </strong>(Internet of Things) Conceito que se refere à interconexão de dispositivos físicos à internet, permitindo coleta e troca de dados.</li>		
+				<li><strong>IP: </strong>(Internet Protocol) Protocolo fundamental para a transmissão de dados pela internet, responsável pelo endereçamento e roteamento de pacotes de dados entre dispositivos na rede.</li>
+				<li class="letra">J</li>
+				<!--<li><strong>item: </strong>about</li>-->
+        <li><strong>Java: </strong>Linguagem de programação orientada a objetos, conhecida por sua portabilidade entre plataformas e ampla utilização em desenvolvimento de aplicações corporativas e móveis.</li>
+        <li><strong>JavaScript: </strong>linguagem de programação amplamente utilizada para criar e controlar o comportamento dinâmico das páginas web.</li>
+        <li><strong>Jenkins: </strong>Ferramenta de CI/CD open-source altamente configurável com suporte a múltiplos plugins e sistemas operacionais.</li>
+				<li><strong>Jest: </strong>Framework de testes em JavaScript focado em simplicidade e suporte a testes unitários e de integração, amplamente usado com aplicações React.</li>
+				<li><strong>Jira: </strong>Ferramenta de gerenciamento de projetos amplamente usada para rastreamento de tarefas, bugs e gestão de projetos ágeis como Scrum e Kanban.</li>
+        <li><strong>jQuery: </strong>Biblioteca JavaScript que simplifica a manipulação do DOM, eventos e animações, facilitando o desenvolvimento web cross-browser.</li>
+        <li><strong>JSON: </strong>(JavaScript Object Notation) formato leve de intercâmbio de dados, fácil de ler e escrever tanto por humanos quanto por máquinas</li>
+        <li><strong>JUnit: </strong>Framework de testes unitários para Java, que facilita a criação e execução de testes automatizados em aplicações Java.</li>
+        <li><strong>JWA: </strong>(JSON Web Algorithms) Conjunto de algoritmos de criptografia padronizados usados em conjunto com tokens JWT para assinar, criptografar e verificar dados de maneira segura.</li>
+        <li><strong>JWT: </strong>(JSON Web Token) Padrão para autenticação e transmissão de dados seguros entre partes.</li>
+				<li class="letra">K</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Kafka: </strong>Plataforma de streaming distribuída e altamente escalável, usada para publicação, armazenamento e processamento de fluxos de dados em tempo real.</li>
+				<li><strong>Kanban: </strong>Método visual de gerenciamento de fluxo de trabalho que utiliza cartões e colunas para organizar e monitorar tarefas em tempo real, promovendo melhoria contínua e eficiência no processo.</li>
+				<li><strong>Keras: </strong>Biblioteca de alto nível para construção e treinamento de redes neurais em Python, usada com backend TensorFlow, facilitando o desenvolvimento de modelos de deep learning.</li>
+				<li><strong>Kibana: </strong>Ferramenta de visualização de dados e análise da stack Elastic. Usada para criar dashboards, gráficos e explorar logs armazenados no Elasticsearch.</li>
+        <li><strong>Kubernetes: </strong>Sistema de orquestração de containers que automatiza o deployment, scaling e gerenciamento de aplicações containerizadas.</li>
+        <li class="letra">L</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Lambda: </strong>Serviço de computação serverless da AWS que permite executar código em resposta a eventos sem gerenciar servidores, cobrando apenas pelo tempo de execução.</li>
+				<li><strong>Laminas: </strong>Framework PHP modular e orientado a objetos, sucessor do Zend Framework, usado para criar aplicações web e APIs robustas e escaláveis.</li>
+				<li><strong>Laravel: </strong>Framework PHP usado para construir aplicações web com uma sintaxe elegante, oferecendo recursos como roteamento, autenticação e Eloquent ORM.</li>
+				<li><strong>Less: </strong>Pré-processador CSS que simplifica o desenvolvimento de estilos com recursos como variáveis, funções e operações, compilando em CSS tradicional.</li>
+				<li><strong>Lightsail: </strong>Serviço da AWS que oferece servidores virtuais simples e de baixo custo para aplicações web e projetos pequenos, com configuração fácil e rápida de infraestrutura.</li>
+				<li><strong>Linux: </strong>Sistema operacional open-source amplamente utilizado por desenvolvedores, especialmente em servidores, ambientes de desenvolvimento e sistemas embarcados.</li>
+				<li><strong>Lit: </strong>Biblioteca JavaScript leve para criar componentes web rápidos e reutilizáveis, focada em simplicidade e performance.</li>		
+				<li><strong>Lua: </strong>Linguagem de programação leve e embutida, projetada para extensão de aplicações. Comumente usada em jogos, sistemas embarcados e como linguagem de script para várias aplicações.</li>
+				<li><strong>Lucene: </strong>Biblioteca de software para indexação e busca de texto, desenvolvida em Java. Usada como base para motores de busca como Elasticsearch e Solr, oferece funcionalidades avançadas de pesquisa.</li>
+				<li><strong>LXC: </strong>(Linux Containers) Tecnologia de virtualização leve que usa namespaces do kernel do Linux para criar containers, proporcionando isolamento de processos e ambientes de sistema.</li>
+				<li class="letra">M</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>MariaDB: </strong>Sistema de gerenciamento de banco de dados relacional (RDBMS) derivado do MySQL. Conhecido por ser open-source, possui uma comunidade ativa e oferece melhorias em performance e segurança.</li>
+				<li><strong>Matplotlib: </strong>Biblioteca Python usada para criar visualizações de dados, como gráficos, histogramas e scatter plots, com alta personalização.</li>
+				<li><strong>Maven: </strong>Ferramenta de automação de builds para projetos Java, que gerencia dependências, compila código e executa testes com base em um arquivo de configuração XML.</li>
+				<li><strong>Meteor.js: </strong>Framework full-stack JavaScript que permite criar aplicações web e móveis em tempo real, usando a mesma base de código tanto no front-end quanto no back-end, com integração com MongoDB.</li>
+				<li><strong>Mercurial: </strong>Sistema de controle de versão distribuído que permite rastrear mudanças em arquivos e colaborar em projetos de software. Oferece funcionalidades como branching, merging e gerenciamento de repositórios, sendo uma alternativa ao Git.</li>
+        <li><strong>Microservices: </strong>Arquitetura que divide uma aplicação em serviços menores e independentes.</li>				
+				<li><strong>Mockito: </strong>Biblioteca para criação de mocks em Java, utilizada para testar o comportamento de objetos em testes unitários.</li>
+				<li><strong>MongoDB: </strong>Banco de dados NoSQL orientado a documentos, que armazena dados em formato JSON-like, ideal para aplicações escaláveis e com grandes volumes de dados.</li>
+				<li><strong>MPP: </strong>(Massively Parallel Processing) Arquitetura de processamento que divide tarefas de computação em vários processadores simultâneos para acelerar o processamento de grandes volumes de dados.</li>
+        <li><strong>MVC: </strong> (Model-View-Controller) Padrão arquitetural para organizar aplicações em três camadas: modelo, visão e controlador.</li>
+				<li><strong>MySQL: </strong>Banco de dados relacional open-source amplamente usado, conhecido pela alta performance, confiabilidade e facilidade de uso, popular em aplicações web.</li>
+        <li class="letra">N</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Neo4j: </strong>Banco de dados orientado a grafos, projetado para armazenar e consultar relações entre dados de forma eficiente, muito usado em aplicações de análise de redes e conexões.</li>
+				<li><strong>NestJS: </strong>Framework de desenvolvimento back-end para Node.js baseado em TypeScript, focado em escalabilidade e modularidade para construir APIs e microserviços.</li>
+				<li><strong>Next.js: </strong>Framework React para desenvolvimento de aplicações web com renderização híbrida (SSR e SSG), roteamento dinâmico e otimização de performance.</li>
+				<li><strong>New Relic: </strong>Plataforma de monitoramento e análise de performance de aplicações. Fornece dados em tempo real sobre software, infraestrutura e experiência do usuário. Ajuda a identificar gargalos e otimizar o desempenho.</li>
+				<li><strong>Node.js: </strong>Ambiente de execução JavaScript no lado do servidor, baseado no motor V8 do Google Chrome, utilizado para criar aplicações web e de rede escaláveis.</li>
+        <li><strong>NPM: </strong>Gerenciador de pacotes para JavaScript, usado para instalar, atualizar e gerenciar dependências de projetos Node.js e frontend.</li>
+        <li><strong>NumPy: </strong>Biblioteca fundamental para computação científica em Python, fornecendo suporte para arrays multidimensionais e operações matemáticas de alta performance.</li>
+				<li class="letra">O</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>OAuth: </strong>Protocolo de autorização que permite que aplicativos acessem recursos de um usuário em um serviço sem expor suas credenciais, frequentemente usado para login via redes sociais.</li>
+				<li><strong>OLAP: </strong>(Online Analytical Processing) Tecnologia que permite consultas complexas e análise de dados multidimensionais para suporte à tomada de decisões, comum em BI (Business Intelligence).</li>
+				<li><strong>OLTP: </strong>(Online Transaction Processing) Processamento de transações em tempo real que gerencia grandes volumes de operações simples e frequentes, típico de sistemas bancários e e-commerce.</li>
+        <li><strong>OOD: </strong>(Object-Oriented Design) Processo de design de software que aplica os princípios da orientação a objetos para estruturar o sistema em classes e objetos interativos.</li>
+        <li><strong>OOP: </strong>(Object-Oriented Programming) Paradigma de programação que organiza o software em objetos que encapsulam dados e comportamentos, promovendo reutilização e modularidade.</li>
+        <li><strong>OpenLens: </strong>Distribuição open-source do Lens, ferramenta de gerenciamento de clusters Kubernetes, com foco em fornecer uma experiência aprimorada e customizável para desenvolvedores e operadores.</li>
+				<li><strong>ORM: </strong> (Object-Relational Mapping) Ferramenta que facilita o mapeamento entre objetos de código e bancos de dados relacionais.</li>
+        <li class="letra">P</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Pandas: </strong>Biblioteca Python para manipulação e análise de dados, oferecendo estruturas como DataFrames para lidar com dados tabulares de forma eficiente.</li>
+				<li><strong>Pascal: </strong>Linguagem focada em ensino e programação estruturada, com forte tipagem e suporte a tipos de dados complexos.</li>
+				<li><strong>PDW: </strong>(Parallel Data Warehouse) Solução de data warehouse distribuído da Microsoft que utiliza MPP para fornecer alta performance em consultas complexas e grandes volumes de dados.</li>
+				<li><strong>Perforce: </strong>Sistema de controle de versão usado em projetos de grande escala, com suporte a gerenciamento de arquivos grandes e integrações com ferramentas de desenvolvimento.</li>
+        <li><strong>Perl: </strong>Linguagem famosa por suas capacidades de processamento de texto e regex, oferecendo flexibilidade e poder de manipulação de dados.</li> 
+        <li><strong>Phalcon: </strong>Framework PHP de alta performance, escrito em C e fornecido como uma extensão do PHP, focado em eficiência e baixo consumo de recursos.</li>
+        <li><strong>PHP: </strong>Linguagem de script do lado do servidor amplamente usada para desenvolvimento web dinâmico e gerenciamento de conteúdo.</li>
+        <li><strong>PHPixie: </strong>Framework PHP leve, projetado para ser simples e de alta performance, usado principalmente para criar aplicações web rápidas com baixa sobrecarga.</li>
+        <li><strong>Playwright: </strong>Framework de automação para testes end-to-end de aplicações web, que suporta múltiplos navegadores e permite testes de IU, interações e desempenho.</li>
+        <li><strong>Podman: </strong>Ferramenta para gerenciar containers, semelhante ao Docker, mas sem um daemon central e com suporte a rootless containers.</li>
+				<li><strong>PostgreSQL: </strong>Banco de dados relacional open-source avançado, conhecido por sua conformidade com padrões SQL, extensibilidade e suporte a operações complexas.</li>
+				<li><strong>PowerShell: </strong>Linguagem de script e shell de linha de comando da Microsoft, projetada para automação de tarefas e gerenciamento de configurações em sistemas Windows e Linux.</li>
+				<li><strong>Pyramid: </strong>Framework web flexível em Python, focado em simplicidade e escalabilidade, permitindo criar desde microsserviços até grandes aplicações web.</li>
+        <li><strong>Python: </strong>Linguagem de alto nível conhecida por sua simplicidade e legibilidade, amplamente usada em desenvolvimento web, ciência de dados e automação.</li>
+        <li><strong>PyTorch: </strong>Biblioteca de machine learning em Python, focada em redes neurais e deep learning, com forte suporte a computação em GPU e pesquisa acadêmica.</li>
+				<li class="letra">Q</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>QEMU: </strong>Emulador e virtualizador open-source que permite executar sistemas operacionais e programas feitos para uma arquitetura em outra.</li>
+				<li><strong>Qlik: </strong>Plataforma de Business Intelligence (BI) que permite visualização de dados, análises interativas e geração de relatórios.</li>
+				<li><strong>Qt: </strong>Framework multiplataforma para desenvolvimento de interfaces gráficas de usuário (GUI) e aplicações, utilizado principalmente em C++.</li>
+				<li class="letra">R</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>RabbitMQ: </strong>Broker de mensagens amplamente usado, baseado no protocolo AMQP, que facilita a comunicação entre serviços com roteamento avançado de mensagens.</li>
+        <li><strong>RDS: </strong>(Relational Database Service) Serviço gerenciado da AWS que facilita a configuração, operação e escalabilidade de bancos de dados relacionais, como MySQL, PostgreSQL e SQL Server.</li>
+				<li><strong>React: </strong>Biblioteca JavaScript para construção de interfaces de usuário interativas e reutilizáveis, desenvolvida pelo Facebook.</li>
+				<li><strong>Redis: </strong>Banco de dados NoSQL em memória, utilizado principalmente como cache, broker de mensagens ou banco de dados chave-valor de alta performance.</li>
+				<li><strong>RegTech: </strong>Tecnologias para ajudar bancos a cumprir regulamentações e normas, como análise de dados e automação de compliance.</li>
+        <li><strong>REST: </strong> (Representational State Transfer) Estilo arquitetural para criação de serviços web.</li>
+        <li><strong>Ruby: </strong>Linguagem orientada a objetos com sintaxe elegante, focada em produtividade e desenvolvimento web, especialmente com Ruby on Rails.</li>
+        <li><strong>Rust: </strong>Linguagem de programação que prioriza segurança de memória e concorrência, amplamente utilizada em sistemas de baixo nível e aplicações de alta performance.</li>
+				<li class="letra">S</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>S3: </strong>(Simple Storage Service) Serviço de armazenamento de objetos da AWS que oferece escalabilidade, disponibilidade e segurança para armazenar e recuperar qualquer quantidade de dados a qualquer momento.</li>
+				<li><strong>SaaS: </strong>(Software as a Service) Modelo de distribuição de software onde as aplicações são acessadas via internet, sem necessidade de instalação local, com manutenção e atualizações gerenciadas pelo provedor.</li>
+				<li><strong>Sass: </strong>Pré-processador CSS que adiciona funcionalidades como variáveis, aninhamento e mixins, tornando o código CSS mais modular e reutilizável.</li>
+				<li><strong>Scala: </strong>Linguagem de programação que combina conceitos de programação funcional e orientada a objetos, usada principalmente para sistemas distribuídos, processamento de dados e aplicações backend.</li>
+				<li><strong>Scrum: </strong>Framework ágil para gerenciamento de projetos que organiza o trabalho em sprints e promove a colaboração contínua e feedback rápido.</li>
+        <li><strong>ServiceNow: </strong>Plataforma baseada em nuvem que automatiza processos de TI e fluxos de trabalho empresariais, oferecendo soluções para gerenciamento de serviços, operações e suporte técnico dentro de organizações.</li>      
+        <li><strong>Shell: </strong>Interface de linha de comando que permite aos usuários interagir com o sistema operacional, executar comandos e scripts, e gerenciar arquivos e processos.</li>
+        <li><strong>Slim: </strong>Microframework PHP usado para construir APIs e aplicações web simples e rápidas, com foco na leveza e facilidade de uso.</li>
+        <li><strong>SMTP: </strong>(Simple Mail Transfer Protocol) Protocolo usado para enviar e-mails pela internet, responsável pelo envio de mensagens de um servidor de e-mail para outro.</li>
+        <li><strong>Snowflake: </strong>Plataforma de data warehouse na nuvem, que permite armazenar e analisar grandes volumes de dados com escalabilidade e performance, sem a necessidade de gerenciar infraestrutura.</li>
+        <li><strong>SOAP: </strong>(Simple Object Access Protocol) Protocolo de comunicação baseado em XML para troca de mensagens estruturadas entre sistemas distribuídos.</li>
+        <li><strong>SOLID: </strong>Conjunto de cinco princípios de design de software: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation e Dependency Inversion. Facilita a criação de sistemas mais escaláveis e fáceis de manter.</li>
+        <li><strong>SonarQube: </strong>Ferramenta de análise contínua de qualidade de código. Avalia aspectos como bugs, vulnerabilidades e duplicação de código, ajudando a manter padrões de qualidade em projetos de software.</li>
+        <li><strong>SPA: </strong>(Single Page Application) Aplicação web que carrega uma única página HTML e atualiza dinamicamente seu conteúdo.</li>
+        <li><strong>Spark: </strong>Framework de processamento de dados rápido e distribuído, com suporte para análise de dados em tempo real e aprendizado de máquina.</li>
+				<li><strong>Splunk: </strong>Plataforma de análise de dados e logs em tempo real, usada para monitorar, pesquisar e visualizar grandes volumes de dados gerados por máquinas.</li>
+        <li><strong>Spring Boot: </strong>Framework Java para criar aplicações independentes e produção-ready com configuração mínima e suporte a microserviços.</li>
+        <li><strong>SQL: </strong>Linguagem de consulta estruturada usada para gerenciar e manipular bancos de dados relacionais.</li>
+        <li><strong>SQL Server: </strong>Banco de dados relacional com suporte a grandes volumes de dados, segurança robusta e integração com ferramentas da Microsoft.</li>
+				<li><strong>SQLite: </strong>Banco de dados relacional leve e embutido, usado principalmente para aplicações locais ou móveis que requerem armazenamento simples e autossuficiente.</li>
+				<li><strong>SSL: </strong>(Secure Sockets Layer) Protocolo de criptografia usado para proteger a comunicação na internet, garantindo que os dados trocados entre servidor e cliente permaneçam privados e íntegros.</li>
+				<li><strong>Struts: </strong>Framework de desenvolvimento web para Java que implementa o padrão MVC (Model-View-Controller), facilitando o desenvolvimento de aplicações web estruturadas.</li>
+				<li><strong>Subversion (SVN): </strong>Sistema de controle de versão centralizado, usado para gerenciar e versionar mudanças em arquivos em projetos de software.</li>
+				<li><strong>Svelte: </strong>Framework JavaScript para construção de interfaces de usuário. Diferente de outros frameworks, Svelte compila o código em JavaScript puro no build, eliminando a necessidade de um runtime.</li>				
+				<li><strong>Swift: </strong>Linguagem de programação desenvolvida pela Apple, focada em desempenho e segurança, usada principalmente para desenvolvimento de apps iOS e macOS.</li>
+				<li><strong>Symfony: </strong>Framework PHP modular e flexível, utilizado para criar aplicações web robustas, com foco em reutilização de componentes e padrões de design.</li>
+        <li class="letra">T</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>TCP: </strong>(Transmission Control Protocol) Protocolo de comunicação orientado à conexão que garante a entrega confiável e na ordem correta de pacotes de dados entre dispositivos em uma rede.</li>
+				<li><strong>TeamCity: </strong>Servidor de CI/CD desenvolvido pela JetBrains, que oferece ferramentas para automação de builds, testes e deploys, com foco em integração com IDEs e monitoramento de qualidade de código.</li>
+				<li><strong>TensorFlow: </strong>Biblioteca open-source de aprendizado de máquina e inteligência artificial, amplamente usada para construir e treinar modelos de deep learning.</li>
+				<li><strong>Terraform: </strong>Ferramenta de infraestrutura como código (IaC) que permite definir, provisionar e gerenciar infraestrutura em nuvem de forma declarativa.</li>	
+				<li><strong>TLS: </strong>(Transport Layer Security) Sucessor do SSL, é um protocolo de criptografia mais seguro e atualizado, usado para proteger a integridade e privacidade dos dados transmitidos entre aplicativos e servidores na web.</li>
+				<li><strong>Tomcat: </strong>Servidor web e contêiner de servlets open-source que executa aplicações Java, amplamente utilizado para aplicações web dinâmicas.</li>
+				<li><strong>Tornado: </strong>Framework Python assíncrono e não-bloqueante, projetado para suportar conexões de longa duração, ideal para aplicações em tempo real.</li>
+				<li><strong>Travis CI: </strong>Serviço de CI/CD baseado em nuvem, integrado ao GitHub e GitLab, com configuração simplificada usando YAML.</li>
+        <li><strong>TypeScript: </strong>Superset do JavaScript que adiciona tipagem estática e outros recursos, facilitando a construção de aplicações grandes e complexas.</li>
+        <li class="letra">U</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Uikit: </strong>Framework front-end para desenvolvimento de interfaces web responsivas, com um conjunto de componentes e estilos pré-definidos.</li>
+				<li><strong>UML: </strong>(Unified Modeling Language) Linguagem de modelagem visual usada para especificar, visualizar, construir e documentar artefatos de software.</li>
+				<li><strong>Unity: </strong>Plataforma de desenvolvimento de jogos e aplicações interativas, amplamente utilizada para criar jogos 2D e 3D em diversas plataformas.</li>		
+				<li><strong>Unix: </strong>Sistema operacional multitarefa e multiusuário, conhecido por sua robustez, segurança e a base para muitos sistemas modernos, incluindo Linux.</li>				
+				<li class="letra">V</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Vagrant: </strong>Ferramenta de automação que permite criar e gerenciar ambientes de desenvolvimento virtualizados, facilitando a configuração e o compartilhamento.</li>
+				<li><strong>Vim: </strong>Editor de texto poderoso e minimalista, baseado em comandos, amplamente utilizado por desenvolvedores que preferem produtividade através de atalhos de teclado.</li>
+				<li><strong>Visual Studio Code: </strong>Editor de código-fonte leve e poderoso da Microsoft, com suporte a uma vasta gama de linguagens e extensões, popular entre desenvolvedores.</li>
+				<li><strong>VPC: </strong>(Virtual Private Cloud) Serviço da AWS que permite criar redes virtuais isoladas dentro da nuvem, fornecendo controle sobre o ambiente de rede, incluindo configuração de sub-redes, roteamento e segurança.</li>
+				<li><strong>VPN: </strong>(Virtual Private Network) Tecnologia que cria uma conexão segura e criptografada entre o usuário e a internet, protegendo dados e permitindo acesso a redes privadas remotamente, como se estivesse conectado localmente.</li>
+				<li><strong>Vue.js: </strong>Framework JavaScript progressivo para construção de interfaces de usuário, conhecido por sua simplicidade e flexibilidade.</li>				
+				<li class="letra">W</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>W3C: </strong>(World Wide Web Consortium) Organização que desenvolve padrões e diretrizes para garantir a interoperabilidade e acessibilidade na web.</li>
+				<li><strong>Webpack: </strong>Empacotador de módulos para aplicações JavaScript, que permite agrupar e otimizar arquivos, facilitando o desenvolvimento e a produção.</li>
+				<li><strong>WebSocket: </strong>Protocolo que fornece comunicação bidirecional em tempo real entre o cliente e o servidor. É usado em aplicações que precisam de atualizações contínuas, como chats e jogos online.</li>
+				<li><strong>WordPress: </strong>Sistema de gerenciamento de conteúdo (CMS) open-source amplamente utilizado para criar e gerenciar sites e blogs.</li>
+				<li><strong>WSDL: </strong>(Web Services Description Language) Linguagem XML usada para descrever os serviços web e como eles se comunicam, incluindo informações sobre métodos e tipos de dados.</li>
+        <li class="letra">X</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Xamarin: </strong>Plataforma de desenvolvimento para criar aplicações móveis nativas para Android e iOS usando C# e .NET.</li>				
+				<li><strong>XML: </strong>(eXtensible Markup Language) linguagem de marcação que define regras para codificação de documentos em um formato legível por humanos e máquinas. Ela é usada para estruturar, armazenar e transportar dados de maneira hierárquica e extensível.</li>
+				<li><strong>XPath: </strong>Linguagem para selecionar elementos e navegar em documentos XML, usada em conjunto com XSLT e XQuery.</li>
+				<li><strong>XQuery: </strong>Linguagem para consultar e manipular dados armazenados em documentos XML e bases de dados XML.</li>
+				<li><strong>XSL: </strong>(Extensible Stylesheet Language) Linguagem usada para definir o estilo e a apresentação de documentos XML.</li>
+				<li><strong>XSLT: </strong>(eXtensible Stylesheet Language Transformations) Linguagem usada para transformar documentos XML em outros formatos, como HTML ou XML modificado.</li>
+				<li class="letra">Y</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>YAML: </strong>(YAML Ain't Markup Language) Formato de serialização de dados legível por humanos, frequentemente usado para configuração de aplicativos e definição de pipelines em CI/CD.</li>
+				<li><strong>Yarn: </strong>Gerenciador de pacotes para JavaScript que serve como uma alternativa ao npm, oferecendo instalação mais rápida e gerenciamento de dependências eficiente.</li>
+				<li><strong>Yeoman (Yo): </strong>Ferramenta de scaffolding que ajuda a iniciar rapidamente projetos web com uma estrutura básica e configurações prontas para uso.</li>
+				<li><strong>Yii2: </strong>Framework PHP de alto desempenho, baseado em componentes, que facilita a criação de aplicações web robustas com suporte a segurança, cache e internacionalização.</li>			
+				<li class="letra">Z</li>
+				<!--<li><strong>item: </strong>about</li>-->
+				<li><strong>Zabbix: </strong>Plataforma de monitoramento open-source para infraestrutura e redes, permitindo coleta de dados e alertas em tempo real para servidores, dispositivos e serviços.</li>
+				<li><strong>Zest: </strong>Framework para desenvolvimento de aplicações web em Java, focado em simplicidade e facilidade de uso para construir aplicações dinâmicas.</li>
+				<li><strong>Zig: </strong>Linguagem de programação de baixo nível que visa simplicidade e performance, sendo uma alternativa ao C com foco em segurança e eficiência.</li>
+				<li><strong>Zod: </strong>Biblioteca TypeScript para validação de esquemas de dados. Permite definir e validar a forma de objetos, garantindo que os dados atendam a critérios específicos antes de serem processados.</li>
+				<li><strong>Zookeeper: </strong>Serviço centralizado para manter informações de configuração, nomeação e sincronização em sistemas distribuídos.</li>
+      </ul>
+    </div>
+		<footer>
+			<p>Desenvolvido por x, todos os direitos reservados.</p>
+		</footer>
+  </main>
+	<script>
+    function contarElementosLi() {
+      const elementosLi = document.querySelectorAll('#minhaLista li');
+      const numdel = elementosLi.length - 26;
+      document.getElementById('resultado').textContent = `termos registrados: ${numdel}`;
+    }
+    contarElementosLi();
+    function atualizarData() {
+      const lastu = document.getElementById("lastu");
+      const dataStr = lastu.innerText; // pega o texto do span
+      const [dia, mes, ano] = dataStr.split("/").map(Number); // divide e converte para número
+      const dataUltimaAtualizacao = new Date(ano, mes - 1, dia); // cria um objeto Date
+      const agora = new Date(); // data atual
+      const diffEmMilissegundos = agora - dataUltimaAtualizacao; // diferença em milissegundos
+      const diasAtras = Math.floor(diffEmMilissegundos / (1000 * 60 * 60 * 24)); // converte para dias
+      if (diasAtras == 0) lastu.innerText = "hoje";
+      if (diasAtras == 1) lastu.innerText = "ontem";
+      if (diasAtras > 1) lastu.innerText = `${diasAtras} dias atrás`; // atualiza o texto
+    }
+    atualizarData();
+  </script>
+</body>
+</html>
